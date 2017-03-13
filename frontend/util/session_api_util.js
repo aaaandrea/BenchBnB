@@ -1,4 +1,4 @@
-
+import { receiveCurrentUser, receiveErrors } from '../actions/session_actions';
 
 export const signup = (user) => {
   return $.ajax({
@@ -20,6 +20,5 @@ export const logout = (user) => {
   return $.ajax({
     method: 'DELETE',
     url: 'api/session',
-    data: user
   });
 };
